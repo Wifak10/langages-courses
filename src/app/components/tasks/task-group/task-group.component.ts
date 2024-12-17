@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { taskGroups } from '../../../models/task-groups';
 
 @Component({
   selector: 'app-task-group',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './task-group.component.css'
 })
 export class TaskGroupComponent {
-
+@Input () taskgroup!:taskGroups
 }

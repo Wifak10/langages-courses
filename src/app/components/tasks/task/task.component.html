@@ -1,21 +1,15 @@
 <ul class="divide-y divide-gray-200 px-4 h-[200px] scrollbar">
     <li class="py-4">
-        <div class="flex items-center">
+        <div class="flex items-center"
+        *ngFor="let task of tasks ; let i = index"
+        >
             <input id="complete" name="complete" type="checkbox"
                 class="h-4 w-4 text-teal-600 focus:ring-teal-500 border-gray-300 rounded">
             <label for="complete" class="ml-3 block text-gray-900">
-                <span class="text-lg font-medium">Introduction à JavaScript (syntaxe, variables, types)</span>
+                <span class="text-lg font-medium">{{task.titreTask}}</span>
             </label>
         </div>
     </li>
-    <li class="py-4">
-        <div class="flex items-center">
-            <input id="complete" name="complete" type="checkbox"
-                class="h-4 w-4 text-teal-600 focus:ring-teal-500 border-gray-300 rounded">
-            <label for="complete" class="ml-3 block text-gray-900">
-                <span class="text-lg font-medium">Fonctions et portées</span>
-            </label>
-        </div>
-    </li>
+
   
 </ul>
