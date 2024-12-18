@@ -6,19 +6,19 @@ import { NotFoundComponent } from "./components/not-found/not-found.component";
 
 const routes: Routes = [
   {
-    path: "/",
+    path: "",
     component: MainContentComponent
   },
   {
-    path: "/login",
+    path: "login",
     component: LoginFormComponent
   },
   {
-    path: "/register",
+    path: "register",
     component: RegisterFormComponent
   },
   {
-    path: "*",
+    path: "**",
     component: NotFoundComponent
   }
 ];
