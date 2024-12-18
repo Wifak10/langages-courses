@@ -16,6 +16,7 @@ import { TaskGroupListComponent } from './components/tasks/task-group-list/task-
 import { TestComponent } from './components/tests/test/test.component';
 import { AfficheListeLanguagesComponent } from './components/tests/affiche-liste-languages/affiche-liste-languages.component';
 import { AfficheDetailLanguagesComponent } from './components/tests/affiche-detail-languages/affiche-detail-languages.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { AfficheDetailLanguagesComponent } from './components/tests/affiche-deta
     TaskGroupListComponent,
     TestComponent,
     AfficheListeLanguagesComponent,
-    AfficheDetailLanguagesComponent
+    AfficheDetailLanguagesComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
