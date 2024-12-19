@@ -17,6 +17,9 @@ import { TestComponent } from './components/tests/test/test.component';
 import { AfficheListeLanguagesComponent } from './components/tests/affiche-liste-languages/affiche-liste-languages.component';
 import { AfficheDetailLanguagesComponent } from './components/tests/affiche-detail-languages/affiche-detail-languages.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
+import { GamesComponent } from './components/games/games.component';
+import { ResidentEvilComponent } from './components/games/resident-evil/resident-evil.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,10 +38,13 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
     AfficheListeLanguagesComponent,
     AfficheDetailLanguagesComponent,
     NotFoundComponent,
+    GamesComponent,
+    ResidentEvilComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
